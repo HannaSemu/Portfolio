@@ -5,7 +5,7 @@ const Experience = () => {
     {
       title: "IT Officer",
       company: "Telekey Trading P.L.C",
-      period: "May 2025 - January 2026",
+      period: "November 2024 - January 2026",
       type: "Full-time",
       description: "Responsible for overseeing and managing day-to-day IT operations, maintaining company computer systems, and providing technical solutions to support business operations. Hands-on experience with Odoo ERP system, supporting users, managing access rights, and assisting in system configuration to meet business needs efficiently.",
       achievements: [
@@ -21,26 +21,17 @@ const Experience = () => {
       ]
     },
     {
-      title: "Chat Box Agent",
+      title: "Customer service",
       company: "Telekey PLC",
-      period: "April 2025",
-      type: "Full-time",
-      description: "Provide instant customer support, increase customer engagement, and collect customer data and feedback.",
-      achievements: [
-        "Provide Instant Customer Support",
-        "Increase Customer Engagement",
-        "Collect Customer Data and Feedback"
-      ]
-    },
-    {
-      title: "Call Center Agent",
-      company: "Telekey PLC",
-      period: "October 2024",
+      period: "Augest 2024 - October 2024",
       type: "Full-time",
       description: "Handle customer inquiries and support, record and report customer feedback.",
       achievements: [
         "Handle Customer Inquiries and Support",
-        "Record and Report Customer Feedback"
+        "Record and Report Customer Feedback",
+        "Provide Instant Customer Support",
+        "Increase Customer Engagement",
+        "Collect Customer Data and Feedback"
       ]
     }
   ];
