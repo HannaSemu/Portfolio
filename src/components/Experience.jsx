@@ -51,46 +51,38 @@ const Experience = () => {
         
         {/* Mobile Timeline */}
         <div className="md:hidden">
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-300 dark:bg-gray-600"></div>
-            
-            {experiences.map((exp, index) => (
-              <div key={index} className="relative flex items-center mb-8">
-                <div className="flex-1 text-center">
-                  <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl shadow-lg card-hover animate-slide-up">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-                        {exp.title}
-                      </h3>
-                      <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 text-sm rounded-full">
-                        {exp.type}
-                      </span>
-                    </div>
-                    <div className="text-gray-600 dark:text-gray-400 mb-4">
-                      <p className="font-medium">{exp.company}</p>
-                      <p className="text-sm">{exp.period}</p>
-                    </div>
-                    <p className="text-gray-700 dark:text-gray-300 mb-4">
-                      {exp.description}
-                    </p>
-                    <div>
-                      <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Key Achievements:</h4>
-                      <ul className="space-y-1">
-                        {exp.achievements.map((achievement, achIndex) => (
-                          <li key={achIndex} className="flex items-start text-gray-600 dark:text-gray-400 text-sm">
-                            <div className="w-2 h-2 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></div>
-                            <span>{achievement}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+          {experiences.map((exp, index) => (
+            <div key={index} className="relative mb-8">
+              <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl shadow-lg card-hover animate-slide-up">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                    {exp.title}
+                  </h3>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 text-sm rounded-full">
+                    {exp.type}
+                  </span>
                 </div>
-              
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
+                <div className="text-gray-600 dark:text-gray-400 mb-4">
+                  <p className="font-medium">{exp.company}</p>
+                  <p className="text-sm">{exp.period}</p>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  {exp.description}
+                </p>
+                <div>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Key Achievements:</h4>
+                  <ul className="space-y-1">
+                    {exp.achievements.map((achievement, achIndex) => (
+                      <li key={achIndex} className="flex items-start text-gray-600 dark:text-gray-400 text-sm">
+                        <div className="w-2 h-2 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></div>
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
         
         {/* Desktop Timeline */}
