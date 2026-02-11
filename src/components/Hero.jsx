@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto text-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            <span className="gradient-text">Hanna Semu</span>
+            <span className="gradient-text animate-pulse">Hanna Semu</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 mb-6">
             IT Officer & Technical Solutions Specialist

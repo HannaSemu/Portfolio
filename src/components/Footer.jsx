@@ -34,7 +34,7 @@ const Footer = () => {
               </svg>
             </a> */}
             <a
-              href="https://github.com/Hanisemu"
+              href="https://github.com/HannaSemu"
               target="_blank"
               className="text-gray-400 hover:text-white transition-colors duration-200"
               aria-label="GitHub"
