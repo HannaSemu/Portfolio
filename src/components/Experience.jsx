@@ -111,11 +111,11 @@ const Experience = () => {
                     </p>
                     <div>
                       <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Key Achievements:</h4>
-                      <ul className="space-y-1">
+                      <ul className="space-y-1 text-left">
                         {exp.achievements.map((achievement, achIndex) => (
                           <li key={achIndex} className="flex items-start text-gray-600 dark:text-gray-400 text-sm">
                             <div className="w-2 h-2 bg-green-600 rounded-full mr-2 mt-1.5 flex-shrink-0"></div>
-                            <span>{achievement}</span>
+                            <span className="text-left">{achievement}</span>
                           </li>
                         ))}
                       </ul>
