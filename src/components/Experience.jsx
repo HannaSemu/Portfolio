@@ -3,6 +3,23 @@ import React from 'react';
 const Experience = () => {
   const experiences = [
     {
+      "title": "IT Officer",
+      "company": "Micro Pharma PLC",
+      "period": "March 2026 - Present",
+      "type": "Full-time",
+      "description": "Responsible for managing and maintaining the company's IT systems, network infrastructure, and hardware components. Deliver comprehensive technical support, system installations, and user assistance to ensure seamless business operations, robust data security, and optimal network connectivity.",
+      "achievements": [
+        "Manage and maintain IT systems and network infrastructure to ensure maximum uptime and connectivity",
+        "Diagnose, troubleshoot, and resolve complex hardware and software issues efficiently",
+        "Provide prompt technical support and user assistance to minimize downtime and maintain productivity",
+        "Oversee the installation, configuration, and routine maintenance of system software and hardware",
+        "Implement and monitor data backup protocols and security management systems to safeguard company data",
+        "Configure, maintain, and troubleshoot printers, peripherals, and other office equipment",
+        "Track and manage the IT inventory and asset lifecycle for all hardware and software components",
+        "Optimize network and internet connectivity, quickly resolving infrastructure bottlenecks"
+      ]
+    },
+    {
       title: "IT Officer",
       company: "Telekey Trading P.L.C",
       period: "November 2024 - January 2026",
