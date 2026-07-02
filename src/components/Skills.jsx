@@ -3,23 +3,33 @@ import React from 'react';
 const Skills = () => {
   const skills = [
     {
-      category: "System Administration",
-      items: ["Windows Server", "Linux Administration", "Network Configuration", "Active Directory"],
-      icon: "🖥️"
+      category: "Software Development",
+      items: ["HTML & CSS", "JavaScript (ES6+)", "React.js", "Web Development"],
+      icon: "💻"
     },
     {
-      category: "Technical Support",
-      items: ["Hardware Troubleshooting", "Software Installation", "Remote Desktop Support", "User Training"],
+      category: "IT Support & Troubleshooting",
+      items: ["Hardware & Software Management", "Printer & Peripheral Support", "Remote Desktop Support", "User Training"],
       icon: "🔧"
     },
     {
-      category: "Infrastructure Management",
-      items: ["System Monitoring", "Backup Solutions", "Security Management", "Performance Optimization"],
-      icon: "🏗️"
+      category: "Business & Enterprise Systems",
+      items: ["Odoo ERP", "Odoo CRM", "Active Directory", "System Monitoring"],
+      icon: "📊"
+    },
+    {
+      category: "System & Infrastructure",
+      items: ["Windows Server", "Linux Administration", "Network Configuration", "Backup Solutions"],
+      icon: "🖥️"
+    },
+    {
+      category: "Microsoft Office Pack",
+      items: ["Word & Excel", "Access & Publisher", "Outlook", "Office 365 Admin"],
+      icon: "📦"
     },
     {
       category: "IT Operations",
-      items: ["Incident Management", "Change Management", "Documentation", "Vendor Management"],
+      items: ["IT Asset & Inventory Management", "Incident & Change Management", "Documentation", "Vendor Management"],
       icon: "⚙️"
     }
   ];
@@ -33,11 +43,12 @@ const Skills = () => {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
           <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
-            Comprehensive technical expertise spanning system administration, support, and infrastructure management
+            Comprehensive technical expertise spanning software development, system administration, support, and infrastructure management.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Adjusted grid to handle 6 categories fluidly */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skillGroup, index) => (
             <div
               key={index}
@@ -60,11 +71,12 @@ const Skills = () => {
           ))}
         </div>
         
+        {/* Professional Competencies Section */}
         <div className="mt-12 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
           <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800 dark:text-gray-200">
             Professional Competencies
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,9 +85,22 @@ const Skills = () => {
               </div>
               <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Problem Solving</h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Efficient diagnosis and resolution of complex technical issues
+                Efficient diagnosis and resolution of complex technical and system issues
               </p>
             </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-amber-100 dark:bg-amber-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Adaptability</h4>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
+                Quick learning ability to master new technologies and shifting operational environments
+              </p>
+            </div>
+
             <div className="text-center">
               <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,18 +109,19 @@ const Skills = () => {
               </div>
               <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Time Management</h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Effective prioritization and prompt response to technical challenges
+                Effective prioritization and prompt response to critical technical challenges
               </p>
             </div>
+
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Communication</h4>
+              <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Collaboration</h4>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Clear technical communication and user training capabilities
+                Clear technical communication, team collaboration, and user training capabilities
               </p>
             </div>
           </div>
